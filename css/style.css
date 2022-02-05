@@ -15,7 +15,7 @@ justify-content: center;}
 
 .card {background-color: hsl(216, 50%, 16%);
 ; width: 375px ;
-height: 575px; border-radius: 5px; 
+height: 575px; border-radius: 5px;
 box-shadow: -1px -1px 32px 13px rgba(0,0,0,0.5);
 -webkit-box-shadow: -1px -1px 32px 13px rgba(0,0,0,0.5);
 -moz-box-shadow: -1px -1px 32px 13px rgba(0,0,0,0.5);}
@@ -24,7 +24,7 @@ box-shadow: -1px -1px 32px 13px rgba(0,0,0,0.5);
 .descripcion-nft {color: hsl(215, 51%, 70%); margin-top: 5px;}
 .valor {color: hsl(178, 100%, 50%);}
 .dias {color: hsl(215, 51%, 70%);}
-.img-borde { display: flex; 
+.img-borde { display: flex;
     justify-content: center;
 align-items: center; height: 48vh;
 margin-top: 25px;
@@ -35,21 +35,87 @@ margin-top: 5px; margin-bottom: 5px;}
 
 p {margin-bottom: 5px;}
 
-.contenedor-datos {margin-left: 20px; 
+.contenedor-datos {margin-left: 20px;
 margin-right: 20px;}
 .detalles {display: flex; justify-content: space-between;
     margin-top: 20px;
      }
 
-    .datos-autor {
-        display: flex; align-items: center; 
+.datos-autor {
+display: flex; align-items: center;
    ; margin-left: 20px; font-size: 15px; margin-top: 10px;}
-    .creation {color: rgb(53, 152, 152);}
-    .nombre {color: rgb(219, 219, 219);}
-    .datos {margin-right: 50px;}
-    .barra {margin-top: 15px; width: 335px; margin-left: 20px; border-radius: 5px; 
+.creation {color: rgb(53, 152, 152);}
+.nombre {color: rgb(219, 219, 219);}
+.datos {margin-right: 50px;}
+.barra {margin-top: 15px; width: 335px; margin-left: 20px; border-radius: 5px; 
     height: 1px; border-color: rgba(196, 192, 192, 0.671); background-color: rgba(196, 192, 192, 0.671);}
-    .detalles div {display: flex; align-items: center; justify-content: center;}
-    .detalles span {margin-left: 5px;}
-    .titulo { margin-top: 40px;}
-    .img-autor { border-radius: 50px; border: 2px white solid; display: flex; justify-content: center;}
+.detalles div {display: flex; align-items: center; justify-content: center;}
+.detalles span {margin-left: 5px;}
+.titulo { margin-top: 40px;}
+.img-autor { border-radius: 50px; border: 2px white solid; display: flex; justify-content: center;}
+
+/*responsive */
+@media only screen and (max-width: 1032px) {
+.img-borde {
+    margin-top: 0%;
+    height: 400px;
+}
+.titulo {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.detalles {
+    margin-top: 0%;
+}
+.barra {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.descripcion-nft {
+    margin-top: 0%;
+}
+.datos-autor {
+    margin-top: 0%;
+}
+.img-central {
+margin-top: 0%;
+}
+.descripcion-nft p {
+    margin-bottom: 0%;
+}
+}
+
+@media only screen and (min-width: 50px) {
+    .img-borde {
+        margin-top: 0%;
+        height: 400px;
+    }
+    .titulo {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .detalles {
+        margin-top: 0%;
+    }
+    .barra {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .descripcion-nft {
+        margin-top: 0%;
+    }
+    .datos-autor {
+        margin-top: 0%;
+    }
+    .img-central {
+    margin-top: 0%;
+    }
+    .descripcion-nft p {
+        margin-bottom: 0%;
+    }
+    body {
+        height: 100vh;
+        background-color: hsl(217, 54%, 11%);
+    }
+
+    }
