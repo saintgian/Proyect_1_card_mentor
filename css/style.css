@@ -13,6 +13,8 @@ display: flex;
 align-items: center;
 justify-content: center;}
 
+.tarjeta
+
 .card {background-color: hsl(216, 50%, 16%);
 ; width: 375px ;
 height: 575px; border-radius: 5px;
@@ -26,7 +28,8 @@ box-shadow: -1px -1px 32px 13px rgba(0,0,0,0.5);
 .dias {color: hsl(215, 51%, 70%);}
 .img-borde { display: flex;
     justify-content: center;
-align-items: center; height: 48vh;
+align-items: center;
+ height: 330px;
 margin-top: 25px;
 }
 
@@ -47,15 +50,19 @@ display: flex; align-items: center;
 .creation {color: rgb(53, 152, 152);}
 .nombre {color: rgb(219, 219, 219);}
 .datos {margin-right: 50px;}
-.barra {margin-top: 15px; width: 335px; margin-left: 20px; border-radius: 5px; 
-    height: 1px; border-color: rgba(196, 192, 192, 0.671); background-color: rgba(196, 192, 192, 0.671);}
+.barra { width: 335px; margin-left: 20px; border-radius: 5px; 
+    height: 1px; border-color: rgba(196, 192, 192, 0.671); background-color: rgba(196, 192, 192, 0.671);
+position: relative; top: 8px;}
 .detalles div {display: flex; align-items: center; justify-content: center;}
 .detalles span {margin-left: 5px;}
 .titulo { margin-top: 40px;}
 .img-autor { border-radius: 50px; border: 2px white solid; display: flex; justify-content: center;}
+.box-datos {
+position: relative; top: 15px;}
+
 
 /*responsive */
-@media only screen and (max-width: 1032px) {
+@media only screen and (max-width: 1400px) {
 .img-borde {
     margin-top: 0%;
     height: 400px;
@@ -85,7 +92,7 @@ margin-top: 0%;
 }
 }
 
-@media only screen and (min-width: 50px) {
+@media only screen and (min-width: 280px) {
     .img-borde {
         margin-top: 0%;
         height: 400px;
@@ -98,8 +105,8 @@ margin-top: 0%;
         margin-top: 0%;
     }
     .barra {
-        margin-top: 8px;
-        margin-bottom: 8px;
+        margin-top: 0 ;
+        margin-bottom: 0 ;
     }
     .descripcion-nft {
         margin-top: 0%;
